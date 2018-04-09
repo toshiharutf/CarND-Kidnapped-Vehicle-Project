@@ -11,6 +11,16 @@
 
 #include "helper_functions.h"
 
+#include <random>
+#include <algorithm>
+#include <iostream>
+#include <numeric>
+#include <math.h> 
+#include <iostream>
+#include <sstream>
+#include <string>
+#include <iterator>
+
 struct Particle {
 
 	int id;
@@ -22,8 +32,6 @@ struct Particle {
 	std::vector<double> sense_x;
 	std::vector<double> sense_y;
 };
-
-
 
 class ParticleFilter {
 	
@@ -78,9 +86,11 @@ public:
 	 * @param predicted Vector of predicted landmark observations
 	 * @param observations Vector of landmark observations
 	 */
-	void dataAssociation(std::vector<LandmarkObs> predicted, std::vector<LandmarkObs>& observations);
+	void dataAssociation(std::vector<LandmarkObs>& predicted, std::vector<LandmarkObs>& observations);
+	std::vector<LandmarkObs> associate_Observations(std::vector<LandmarkObs> inRangeLandmarks, std::vector<LandmarkObs> observations);
 	
-	/**
+        double mgp(double x,double mu_x,double sigma_x, double y,double mu_y,double sigma_y);
+        /**
 	 * updateWeights Updates the weights for each particle based on the likelihood of the 
 	 *   observed measurements. 
 	 * @param sensor_range Range [m] of sensor
@@ -108,6 +118,7 @@ public:
 	std::string getAssociations(Particle best);
 	std::string getSenseX(Particle best);
 	std::string getSenseY(Particle best);
+        
 
 	/**
 	* initialized Returns whether particle filter is initialized yet or not.

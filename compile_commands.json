@@ -1,0 +1,12 @@
+[
+{
+  "directory": "/home/toshi/Documents/Term2/CarND-Kidnapped-Vehicle-Project",
+  "command": "/usr/bin/g++     -g3 -gdwarf-2   -std=c++11 -o CMakeFiles/particle_filter.dir/src/particle_filter.cpp.o -c /home/toshi/Documents/Term2/CarND-Kidnapped-Vehicle-Project/src/particle_filter.cpp",
+  "file": "/home/toshi/Documents/Term2/CarND-Kidnapped-Vehicle-Project/src/particle_filter.cpp"
+},
+{
+  "directory": "/home/toshi/Documents/Term2/CarND-Kidnapped-Vehicle-Project",
+  "command": "/usr/bin/g++     -g3 -gdwarf-2   -std=c++11 -o CMakeFiles/particle_filter.dir/src/main.cpp.o -c /home/toshi/Documents/Term2/CarND-Kidnapped-Vehicle-Project/src/main.cpp",
+  "file": "/home/toshi/Documents/Term2/CarND-Kidnapped-Vehicle-Project/src/main.cpp"
+}
+]
