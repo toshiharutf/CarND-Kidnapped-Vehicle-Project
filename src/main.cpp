@@ -44,11 +44,12 @@ int main()
   }
   
   // print map landmarks
-  
+  /*
   for(int i = 0; i <  map.landmark_list.size(); ++i){
       cout << "i: " << i << "  id: " << map.landmark_list[i].id_i << endl;
   }
- 
+ */
+  
   // Create particle filter
   ParticleFilter pf;
 

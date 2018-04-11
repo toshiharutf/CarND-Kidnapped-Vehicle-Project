@@ -98,12 +98,12 @@ std::vector<LandmarkObs> ParticleFilter::associate_Observations(std::vector<Land
 
     for (auto obs: observations){
 
-        double shortest = 1E10; // initial large number 
+        double min = 1E10; // initial large number 
         double distance = 0;
         for (auto l: inRangeLandmarks){
             distance = dist(obs.x,obs.y,l.x,l.y);
-            if (distance < shortest) {
-                shortest = distance;
+            if (distance < min) {
+                min = distance;
                 closest.x = obs.x;
                 closest.y = obs.y;
                 closest.id = l.id;  // the landmark id is associated to this observation
@@ -137,9 +137,9 @@ void ParticleFilter::updateWeights(double sensor_range, double std_landmark[],
         
         // Filter landmarks outside the particle's range
         std::vector<LandmarkObs> inRangeLandmarks;
+        LandmarkObs l;
         for(auto landmark: map_landmarks.landmark_list){
             if( dist(landmark.x_f, landmark.y_f, p.x, p.y) < sensor_range){
-                LandmarkObs l;
                 l.x = landmark.x_f;
                 l.y = landmark.y_f;
                 l.id = landmark.id_i; //why the struct is different?
@@ -192,9 +192,10 @@ void ParticleFilter::resample() {
 
     //std::default_random_engine generator;
     std::uniform_real_distribution<double> distribution(0,1);
+    double r = 0.0;
     
     for(int i = 0; i < num_particles; ++i){
-        double r = distribution(gen);
+        r = distribution(gen);
         beta = r*2*mw;
         
         while(beta > weights[index]){
