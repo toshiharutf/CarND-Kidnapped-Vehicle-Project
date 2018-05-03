@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <configurationDescriptor version="100">
   <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
-    <df root="src" name="1">
+    <df root="src" name="0">
       <in>main.cpp</in>
       <in>particle_filter.cpp</in>
     </df>
@@ -10,7 +10,7 @@
                    projectFiles="false"
                    kind="IMPORTANT_FILES_FOLDER">
       <itemPath>CMakeLists.txt</itemPath>
-      <itemPath>Makefile</itemPath>
+      <itemPath>build/Makefile</itemPath>
       <itemPath>nbproject/private/launcher.properties</itemPath>
     </logicalFolder>
   </logicalFolder>
@@ -18,7 +18,7 @@
   <sourceRootList>
     <Elem>src</Elem>
   </sourceRootList>
-  <projectmakefile>Makefile</projectmakefile>
+  <projectmakefile>build/Makefile</projectmakefile>
   <confs>
     <conf name="Default" type="0">
       <toolsSet>
@@ -36,7 +36,7 @@
           <buildCommandWorkingDir>build</buildCommandWorkingDir>
           <buildCommand>${MAKE} -f Makefile</buildCommand>
           <cleanCommand>${MAKE} -f Makefile clean</cleanCommand>
-          <executablePath>build/particle_filter</executablePath>
+          <executablePath></executablePath>
           <ccTool>
             <incDir>
               <pElem>build</pElem>
@@ -44,8 +44,8 @@
           </ccTool>
         </makeTool>
         <preBuild>
-          <preBuildCommandWorkingDir>.</preBuildCommandWorkingDir>
-          <preBuildCommand>${CMAKE} -G "Unix Makefiles" -DCMAKE_BUILD_TYPE=Debug -DCMAKE_C_COMPILER=${IDE_CC} -DCMAKE_CXX_COMPILER=${IDE_CXX} -DCMAKE_C_FLAGS_DEBUG="-g3 -gdwarf-2" -DCMAKE_CXX_FLAGS_DEBUG="-g3 -gdwarf-2" -DCMAKE_EXPORT_COMPILE_COMMANDS=ON .</preBuildCommand>
+          <preBuildCommandWorkingDir>build</preBuildCommandWorkingDir>
+          <preBuildCommand>${CMAKE} -G "Unix Makefiles" -DCMAKE_BUILD_TYPE=Debug -DCMAKE_C_COMPILER=${IDE_CC} -DCMAKE_CXX_COMPILER=${IDE_CXX} -DCMAKE_C_FLAGS_DEBUG="-g3 -gdwarf-2" -DCMAKE_CXX_FLAGS_DEBUG="-g3 -gdwarf-2" -DCMAKE_EXPORT_COMPILE_COMMANDS=ON ..</preBuildCommand>
         </preBuild>
       </makefileType>
       <item path="src/main.cpp" ex="false" tool="1" flavor2="8">

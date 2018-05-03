@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <configurationDescriptor version="100">
   <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
-    <df root="src" name="1">
+    <df root="src" name="0">
       <in>helper_functions.h</in>
       <in>json.hpp</in>
       <in>main.cpp</in>
@@ -10,7 +10,7 @@
       <in>particle_filter.h</in>
     </df>
   </logicalFolder>
-  <projectmakefile>Makefile</projectmakefile>
+  <projectmakefile>build/Makefile</projectmakefile>
   <confs>
     <conf name="Default" type="0">
       <toolsSet>
@@ -49,7 +49,7 @@
           <runcommandpicklistitem>"${OUTPUT_PATH}"</runcommandpicklistitem>
         </runcommandpicklist>
         <runcommand>"${OUTPUT_PATH}"</runcommand>
-        <rundir>/home/toshi/Documents/Term2/CarND-Kidnapped-Vehicle-Project/build</rundir>
+        <rundir>build</rundir>
         <buildfirst>false</buildfirst>
         <terminal-type>0</terminal-type>
         <remove-instrumentation>0</remove-instrumentation>

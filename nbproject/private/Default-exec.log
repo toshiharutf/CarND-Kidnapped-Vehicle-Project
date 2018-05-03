@@ -1,5 +1,5 @@
 called: /usr/bin/g++
-	/home/toshi/Documents/Term2/CarND-Kidnapped-Vehicle-Project
+	/home/toshi/Documents/Term2/CarND-Kidnapped-Vehicle-Project/build
 	/usr/bin/g++
 	-g3
 	-gdwarf-2
@@ -10,7 +10,7 @@ called: /usr/bin/g++
 	/home/toshi/Documents/Term2/CarND-Kidnapped-Vehicle-Project/src/particle_filter.cpp
 
 called: /usr/bin/g++
-	/home/toshi/Documents/Term2/CarND-Kidnapped-Vehicle-Project
+	/home/toshi/Documents/Term2/CarND-Kidnapped-Vehicle-Project/build
 	/usr/bin/g++
 	-g3
 	-gdwarf-2
@@ -21,7 +21,7 @@ called: /usr/bin/g++
 	/home/toshi/Documents/Term2/CarND-Kidnapped-Vehicle-Project/src/main.cpp
 
 called: /usr/bin/g++
-	/home/toshi/Documents/Term2/CarND-Kidnapped-Vehicle-Project
+	/home/toshi/Documents/Term2/CarND-Kidnapped-Vehicle-Project/build
 	/usr/bin/g++
 	-g3
 	-gdwarf-2
@@ -35,12 +35,12 @@ called: /usr/bin/g++
 	-luWS
 
 called: /usr/bin/ld
-	/home/toshi/Documents/Term2/CarND-Kidnapped-Vehicle-Project
+	/home/toshi/Documents/Term2/CarND-Kidnapped-Vehicle-Project/build
 	/usr/bin/ld
 	-plugin
 	/usr/lib/gcc/x86_64-linux-gnu/5/liblto_plugin.so
 	-plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper
-	-plugin-opt=-fresolution=/tmp/ccYlZtWK.res
+	-plugin-opt=-fresolution=/tmp/ccK8vXcF.res
 	-plugin-opt=-pass-through=-lgcc_s
 	-plugin-opt=-pass-through=-lgcc
 	-plugin-opt=-pass-through=-lc
