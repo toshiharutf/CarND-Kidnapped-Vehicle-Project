@@ -13,6 +13,10 @@ In each iteration the following steps are executed:
 
 4) Then, the particles are resampled, proportionally to their weights. 
 
+In the animation below, a part of the simulation can be observed. The blue rings represent each particle. Since most of them had correctly located the position of the car, is difficult to notice each of them apart. The black rings are the map's landmarks. The green lines represent the LIDAR sensor. which detect only nearby landmarks.
+
+![alt text](sim.gif)
+
 
 # Running the Code
 This project involves the Term 2 Simulator which can be downloaded [here](https://github.com/udacity/self-driving-car-sim/releases)
